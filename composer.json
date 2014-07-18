@@ -1,7 +1,7 @@
 {
 	"name": "oknoah/endless-cosby",
 	"description": "Endless Cosby. An example with Laravel, endless scrolling and PlaceCosby API.",
-	"keywords": ["framework", "laravel", "API", "Cosby", "bill cosby"],
+	"keywords": ["framework", "laravel", "API", "Cosby", "bill cosby", "jquery", "endless scrolling"],
 	"license": "MIT",
 	"version": "0.0.5",
 	"require": {

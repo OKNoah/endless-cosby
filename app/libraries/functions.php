@@ -4,8 +4,8 @@
 
 		/* Get a single Bill */
 		static function single($no) {
-			echo "<div class='col-md-3 well'>";
-			echo "<img class='center' src='http://www.placecosby.com/200/200/?image=" . $no . "'>";
+			echo "<div class='col-lg-3 col-md-12 center'>";
+			echo "<img class='thumbnail center' src='http://www.placecosby.com/250/200/?image=" . $no . "'>";
 			echo "</div>";
 		}
 

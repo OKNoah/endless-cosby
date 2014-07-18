@@ -6,20 +6,26 @@ See Endless Cosby in action here: http://endless-cosby.studiodogma.ca
 
 ## Installation
 
-Use Composer to install with all dependencies:
+Clone from Github, then get dependencies with Composer. You should do this in your web server root (eg. /var/www):
 
-    composer create-project oknoah/endless-cosbyoknoah/endless-cosby:dev-master endless-cosby
-
-Note: The last argument is the directory to install to. Make sure your working directory is an OK place to install, or change it.
-
-If you cloned/forked the project from GitHub, run this command to get the dependencies:
-
+	git clone https://github.com/OKNoah/endless-cosby.git
+	cd endless-cosby
 	composer update --no-dev
 
 After installation, chown the files to your web server like this:
 
 	cd endless-cosby
 	chown -R www-data ./
+
+If you cloned/forked the project from GitHub already, run this command to get the dependencies:
+
+	composer update --no-dev
+
+Alternatively, use Composer to install with all dependencies (this method makes updates harder):
+
+    composer create-project oknoah/endless-cosbyoknoah/endless-cosby:dev-master endless-cosby
+
+Note: The last argument is the directory to install to. Make sure it's the right place, probably `/var/www`.
 
 Note: Your web server user may be different. On Mac, it's `_www` by default.
 
