@@ -3,6 +3,7 @@
 	"description": "Endless Cosby. An example with Laravel, endless scrolling and PlaceCosby API.",
 	"keywords": ["framework", "laravel", "API", "Cosby", "bill cosby"],
 	"license": "MIT",
+	"version": "0.0.5",
 	"require": {
 		"laravel/framework": "4.2.*"
 	},
