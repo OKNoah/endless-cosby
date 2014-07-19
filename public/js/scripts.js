@@ -10,7 +10,7 @@ function getRow() {
 	url: 'row?' + new Date().getTime(),
 	success: function(html) {
 		$('.row:last-child').after(html);
-		// checkHeight();
+		checkHeight();
 	}
 	})
 	$('.loading').show();
@@ -33,7 +33,7 @@ $(document).ready(function() {
 // detects scrolling and if it's at the bottom.
 
 $(window).scroll(function() {
-	if((window.innerHeight + window.scrollY) >= ($(document).height() - 50)) {
+	if((window.innerHeight + window.scrollY) > ($(document).height() - 10)) {
 			getRow();
 	};
 });
