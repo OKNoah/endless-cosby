@@ -1,11 +1,6 @@
-// detects scrolling and if it's the bottom
+// fills the screen with cosbys before any scrolling. based on height of window and the .container element.
 
-$(window).scroll(function() {
-	if((window.innerHeight + window.scrollY) == $(document).height()) {
-			// $('.loading').show();
-			getRow();
-	};
-});
+var originalHeight = $(window).height();
 
 // calls /row with ajaxs and prints html result
 
@@ -14,7 +9,29 @@ function getRow() {
 	url: 'row',
 	success: function(html) {
 		$('.row:last-child').after(html);
-		console.log('row added');
+		// checkHeight();
 	}
 	})
 }
+
+// checks height of 
+
+function checkHeight() {
+	if($('.container').height() < originalHeight) {
+		getRow();
+	};
+}
+
+// runs checkHeight after document load
+
+$(document).ready(function() {
+	checkHeight();
+})
+
+// detects scrolling and if it's at the bottom.
+
+$(window).scroll(function() {
+	if((window.innerHeight + window.scrollY) == $(document).height()) {
+			getRow();
+	};
+});
