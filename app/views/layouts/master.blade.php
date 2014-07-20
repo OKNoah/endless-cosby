@@ -12,3 +12,7 @@
 	@yield('content')
 
 </div>
+
+@if(App::environment('production'))
+	{{ HTML::script('../js/piwik.js') }}
+@endif

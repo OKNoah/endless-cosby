@@ -4,7 +4,7 @@
 
 		/* Get a single Bill */
 		static function single($no) {
-			echo "<div class='col-lg-3 col-md-12 center' style='min-height: 200px;'>";
+			echo "<div class='col-lg-3 col-md-12' style='min-height: 200px; margin: 0 auto;'>";
 			echo "<img class='thumbnail' src='http://www.placecosby.com/250/200/?image=" . $no . "'>";
 			echo "</div>";
 		}
