@@ -2,8 +2,6 @@
 
 Endless Cosby is an example of the Laravel framework, endless scrolling through jQuery and the PlaceCosby API.
 
-See Endless Cosby in action here: http://endless-cosby.studiodogma.ca
-
 ## Installation
 
 Clone from Github, then get dependencies with Composer. You should do this in your web server root (eg. /var/www):
